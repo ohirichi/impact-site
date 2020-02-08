@@ -2,9 +2,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CTAButton from '../components/CTAButton';
 import ServiceCard from "../components/ServiceCard";
-import TeamProfile from "../components/TeamProfile";
 import SlideShow from "../components/SlideShow";
-import ConnectForm from "../components/ConnectForm";
 import Curve from "../components/Curve";
 
 

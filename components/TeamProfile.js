@@ -13,8 +13,9 @@ export default function TeamProfile(props){
                         align-items:center;
                         background:white;
                         color: var(--main-color);
-                        width:150px;
-                        padding-top: 1rem;
+                        min-width:140px;
+                        padding: .5rem;
+                        transition: transform 0.3s ease;
                     }
                     img{
                         height:100px;
@@ -27,7 +28,7 @@ export default function TeamProfile(props){
                         
                     }
 
-                    img:hover {
+                    div:hover {
                         transform: scale(1.1)
                     }
 
@@ -41,6 +42,12 @@ export default function TeamProfile(props){
                         font-size: 1rem;
                         font-style:italic;
                         font-weight: bold;
+                    }
+
+                    @media only screen and (min-width: 500px){
+                        div{
+                            min-width: 200px;
+                        }
                     }
                 `}
             </style>
