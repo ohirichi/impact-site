@@ -1,5 +1,9 @@
-export default function ServiceDetail(){
+export default function ServiceDetail(props){
     return(
-        <div>hello</div>
+        <div>
+            <img />
+            <h2>{props.title}</h2>
+            
+        </div>
     )
 }

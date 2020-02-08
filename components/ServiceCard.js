@@ -7,7 +7,7 @@ export default function ServiceCard(props){
             <figure>
                 <img src={props.img} alt={props.alt}/>
                 <figcaption>{props.caption}</figcaption>
-                <Link href="/services"><a className="learn-more" >Learn More</a></Link>
+                <Link href={props.link}><a className="learn-more" >Learn More</a></Link>
             </figure>
             <style jsx>
                 {`

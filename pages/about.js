@@ -39,8 +39,9 @@ export default function About(){
                 <section>
                     <div className="blurb-container">
                         <h4 className="blurb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque beatae blanditiis accusamus repellendus, accusantium perferendis repellat fugiat mollitia non fugit.</h4>
+                        <CTAButton link="/contact" >Connect</CTAButton>
                     </div>
-                    <CTAButton link="/connect" >Connect</CTAButton>
+                    
                 </section>
 
             </main>
@@ -138,7 +139,7 @@ export default function About(){
                     }
                     main section:last-child > .blurb-container {
                         min-height: 50vh;
-                        justify-content: flex-end;
+                        
                         margin-bottom: 0;
                         padding-bottom:0;
                         // color: var(--secondary-color);

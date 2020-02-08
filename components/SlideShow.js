@@ -198,7 +198,7 @@ export default class SlideShow extends Component{
                             margin: 1rem;
                             background-color: #1B0DA5;
                             z-index: 100;
-                            
+                            cursor: pointer;
                         }
                         .indicator.active{
                             background-color: var(--accent-color);

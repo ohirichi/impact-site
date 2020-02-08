@@ -20,14 +20,14 @@ export default function Navbar(){
                 color:white;
                 margin:0;
                 max-width:100vw;
-                min-width:80vw;
-                padding: 1rem;
+                min-width:70vw;
+                padding: .5rem;
             }
             
             .logo{
                 font-weight: bold;
                 justify-self:start;
-                margin: 1rem;
+                margin: 0.5rem;
                 font-size: 1.2rem;
                 transition: transform 0.2s ease;
             }

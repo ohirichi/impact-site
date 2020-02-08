@@ -13,7 +13,7 @@ export default function Index (){
                 <Navbar />
                 <div className="cta">
                     <h2 className ="tagline">Marketing Solutions to Move Your Brand Forward</h2>
-                    <CTAButton link="/connect" >Connect</CTAButton>
+                    <CTAButton link="/contact" >Connect</CTAButton>
                 </div>                
                 <Curve />
             </header>            
@@ -26,9 +26,9 @@ export default function Index (){
                     <div className ="services-container">
                         <img className="bg-circle" src = "/bgcircle.svg" />
                         <div className="services">
-                            <ServiceCard link="/services" img="/icon1.png" caption="Branding & Strategy" />
-                            <ServiceCard link="/services" img="/icon2.png" caption="Social & Content Marketing" />
-                            <ServiceCard link="/services" img="/icon3.png" caption="Research & Data Analysis" />
+                            <ServiceCard link="/services#branding" img="/icon1.png" caption="Branding & Strategy" />
+                            <ServiceCard link="/services#social" img="/icon2.png" caption="Social & Content Marketing" />
+                            <ServiceCard link="/services#data" img="/icon3.png" caption="Research & Data Analysis" />
                         </div>
                         
                     </div>
@@ -50,7 +50,7 @@ export default function Index (){
                 <section className="short-section">
                     <div className="final-cta">
                         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, explicabo!</h3>
-                        <CTAButton link="/connect" >Connect</CTAButton>
+                        <CTAButton link="/contact" >Connect</CTAButton>
                     </div>
                 </section>
                 
@@ -73,7 +73,7 @@ export default function Index (){
 
                     html{
                         scroll-behavior: smooth; /*currently only Firefox and Chrome */
-                        font-size:10px;
+                        font-size:12px;
                         overflow-x: hidden;
                         --main-color:#1B0DA5; 
                         --accent-color:#FCFC42;
