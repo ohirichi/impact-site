@@ -6,6 +6,7 @@ import SlideShow from "../components/SlideShow";
 import Curve from "../components/Curve";
 
 
+
 export default function Index (){
     return (
         <div>
