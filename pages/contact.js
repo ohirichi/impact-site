@@ -7,7 +7,10 @@ export default function Contact(){
     return(
         <div>
             <header>
+                
                 <Navbar />
+                
+                
             </header>
             <main>
                 <section>
@@ -49,7 +52,11 @@ export default function Contact(){
                     }
                     header{
                         background-color: var(--secondary-color);
+                       
                     }
+
+                   
+
                     section {
                         display:flex;
                         flex-direction: column;

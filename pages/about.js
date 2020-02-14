@@ -7,7 +7,10 @@ export default function About(){
     return (
         <div className="content-container">
             <header>
+                <div className="nav-container">
                 <Navbar />
+                </div>
+                
             </header>
             <main>
                 <section>
@@ -83,10 +86,22 @@ export default function About(){
                         height: 80vh;
                         border-radius:0 0 50% 50%;
                         background-attachment: fixed;
-                        display: flex;
-                        justify-content: space-around;
+                        // display: grid;
+                        // grid-template-columns: 10% 80% 10%;
+                        // grid-template-rows: 20% 90%;
+                        // grid-template-areas:
+                        // ". main ."
+                        // ". . .";
+
+                        display:flex;
+                        justify-content:center;
                         align-items:flex-start;
 
+                    }
+
+                    .nav-container{
+                        //grid-area: main;
+                        width:80%;
                     }
 
 

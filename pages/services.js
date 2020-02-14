@@ -20,40 +20,40 @@ export default function Services(){
                         <h3>Branding & Strategy</h3>
                         <img src="/icon1.png" />
                         <p className="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, itaque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, quia? ipsum dolor sit amet.</p>
-                        <p className = "p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis unde voluptatem nisi harum veniam?
+                        <div className = "p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis unde voluptatem nisi harum veniam?
                             <ul>
                                 <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
                                 <li>Assumenda, vero atque officia ipsum laudantium doloribus?</li>
                                 <li>Totam a animi adipisci fugiat. Aliquid, exercitationem.</li>  
                             </ul>         
-                        </p>
+                        </div>
 
                     </div>
                     <div className="service" id="social">
                         <h3>Social & Content</h3>
                         <img src="/icon2.png" />
                         <p className="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, voluptatibus? Id quisquam architecto, hic a repellendus molestias eveniet ratione laboriosam?</p>
-                        <p className = "p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis unde voluptatem nisi harum veniam?
+                        <div className = "p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis unde voluptatem nisi harum veniam?
                             <ul>
                                 <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
                                 <li>Assumenda, vero atque officia ipsum laudantium doloribus?</li>
                                 <li>Totam a animi adipisci fugiat. Aliquid, exercitationem.</li>  
                             </ul>          
-                        </p>
+                        </div>
 
                     </div>
                     <div className="service" id="data">
                         <h3>Research & Data Analytics</h3>
                         <img src="/icon3.png" />
                         <p className="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, corporis ratione fugiat modi nihil consequatur facilis totam sit tenetur magni exercitationem quia facere nemo vitae possimus reiciendis commodi? Beatae, fugit voluptate. Quibusdam vitae quos vel?</p>
-                        <p className = "p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis unde voluptatem nisi harum veniam?
+                        <div className = "p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis unde voluptatem nisi harum veniam?
                             <ul>
                                 <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
                                 <li>Assumenda, vero atque officia ipsum laudantium doloribus?</li>
                                 <li>Totam a animi adipisci fugiat. Aliquid, exercitationem.</li>  
                             </ul>
                                      
-                        </p>
+                        </div>
 
                     </div>
                     
@@ -93,9 +93,8 @@ export default function Services(){
 
                     header {
                         background-color: var(--main-color);
-                        height: 10vh;
-                        display:flex;
-                        justify-content: center;
+                        
+                        
                     }
 
                     main{
@@ -181,7 +180,6 @@ export default function Services(){
                     
 
                 `}
-
             </style>
         </div>
     )
