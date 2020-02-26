@@ -20,8 +20,11 @@ export default function Contact(){
                 </section>
                 <section>
                     <div className="blurb-container">
-                        <h3>You can also reach us at the below</h3>
-                        <p>123 Madison Ave</p>
+                        <h3>You can also visit or write to us at:</h3>
+                        <p>123 Madison Ave <br/>
+                        New York, NY 
+                        </p>
+                        <h3>Or give us a call at:</h3>
                         <p>877 393 4428</p>
 
                     </div>
@@ -65,10 +68,17 @@ export default function Contact(){
                         flex-direction:column;
                         justify-content:center;
                         align-items: center;
-                        height: 30vh;
                         text-align: center;
+                        border: 2px solid var(--secondary-color);
+                        border-radius:10px;
+                        padding: 4rem;
+                        margin: 2rem;
+                        color:var(--secondary-color);
                     }
-
+                    section:nth-child(2){
+                        min-height:100vh;
+                        justify-content:center;
+                    }
                 `}
             </style>
         </div>
