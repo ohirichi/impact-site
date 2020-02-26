@@ -24,19 +24,13 @@ export default class ConnectForm extends Component {
         }
         this.onSubmitHandler = this.onSubmitHandler.bind(this);
         this.handleChange = this.handleChange.bind(this);
-        this.onBlurHandler = this.onBlurHandler.bind(this);
-        this.onFocusHandler = this.onFocusHandler.bind(this);
+
     }
 
     handleChange(e){
-        //console.log(e.target.value, typeof e.target.value);
         this.setState({[e.target.id] : e.target.value, touched: {...this.state.touched, [e.target.id]:true}})
-        //this.validateForm()
     }
 
-    onFocusHandler(e){
-        this.setState({currentFieldId:e.target.id})
-    }
 
 
     validateName(name){
@@ -72,11 +66,6 @@ export default class ConnectForm extends Component {
        
     }
 
-    onBlurHandler(e){
-        console.log(e);
-        //this.setState({touched:{...this.state.touched, [e.target.id]:true}})
-    }
-
     onSubmitHandler(e){
         e.preventDefault();
         const {nameErrorMsg, emailErrorMsg, phoneErrorMsg} = this.validateForm();
@@ -91,15 +80,15 @@ export default class ConnectForm extends Component {
             this.setState({touched:{name:true, email:true, phone:true, message:true}, showAlert:true, alertMessage:"Please correct the issues on the form and resubmit"})
         }
         else{
-            emailjs.send("gmail", "contact_form", templateParams, secrets.emailJs )
-            .then(result => {
-                console.log(result)
-                this.setState({touched:{name:true, email:true, phone:true, message:true}, showAlert:true, alertMessage:"Thanks! We'll be in touch with you shortly!"})
-            })
-            .catch(err => {
-                console.log(err);
-                this.setState({touched:{name:true, email:true, phone:true, message:true}, showAlert:true, alertMessage:"Something went wrong. Please try again"})
-            })
+            // emailjs.send("gmail", "contact_form", templateParams, secrets.emailJs )
+            // .then(result => {
+            //     console.log(result)
+            //     this.setState({touched:{name:true, email:true, phone:true, message:true}, showAlert:true, alertMessage:"Thanks! We'll be in touch with you shortly!"})
+            // })
+            // .catch(err => {
+            //     console.log(err);
+            //     this.setState({touched:{name:true, email:true, phone:true, message:true}, showAlert:true, alertMessage:"Something went wrong. Please try again"})
+            // })
 
             this.setState({touched:{name:true, email:true, phone:true, message:true}, showAlert:true, alertMessage:"Thanks for trying the contact form!"})
         }      

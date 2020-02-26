@@ -8,6 +8,7 @@ export default function AlertBox(props){
     return (
         <div className={hidden ? "container hidden" : "container"} >
             <div className="alert-container">
+                {/* If a link is passed in, wrap the close button in a link to redirect, if no link, just "close"/hide the alertbox */}
                 {props.link ? <button><a href={props.link}>x</a></button> : <button onClick={()=>{setHidden(true)}} >x</button>}
                 
                 <p>{props.message} </p>

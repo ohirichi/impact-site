@@ -14,8 +14,11 @@ export default function Footer(){
                 <Link href="/about"><a className="nav-link">About</a></Link>
                 <Link href="/services"><a className="nav-link">Services</a></Link>
                 <Link href="/contact"><a className="nav-link">Contact</a></Link>
-                <Link href="/credits"><a className="nav-link">Credits</a></Link>
+                {/* <Link href="/credits"><a className="nav-link">Credits</a></Link> */}
             </ul>
+            <p className="credit">Code and Design by: ohirichi <br />Icons by: <a href="https://www.flaticon.com/authors/pongsakornred" title="pongsakornRed">pongsakornRed</a></p>
+            
+            
             
             <style jsx>
                 {`
@@ -25,9 +28,10 @@ export default function Footer(){
                         width:100%;
                         color: white;
                         margin:0;
-                        font-size: .8rem;
+                        font-size: .7rem;
                         display: flex;
                         justify-content: space-between;
+                        position:relative;
 
                     }
 
@@ -40,7 +44,7 @@ export default function Footer(){
                     }
 
                     h4 {
-                        margin-top: 0.5rem;
+                        margin-top: 1.5rem;
                         margin-bottom: 0;
                     }
                    
@@ -52,8 +56,6 @@ export default function Footer(){
                         flex-wrap: wrap;
                         justify-content: flex-start;
                         align-items: flex-end;
-                        padding-right: 1rem;
-                        margin-right: 2rem;
                         width:40%;
                         margin:1rem;
                         height: 50px;
@@ -70,6 +72,20 @@ export default function Footer(){
         
                     .nav-link:hover{
                         color:var(--accent-color);
+                    }
+
+                    .credit {
+                        position: absolute;
+                        bottom:0;
+                        right:0;
+                        margin-right:1rem;
+                        font-size:10px;
+                        text-align:right;
+                    }
+
+                    .credit a {
+                        text-decoration:none;
+                        color: white;
                     }
                 `}
             </style>
