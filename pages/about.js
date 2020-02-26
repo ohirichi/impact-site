@@ -49,28 +49,9 @@ export default function About(){
 
             </main>
             <Footer />
-            <style jsx global>
+            <style jsx>
                 {`
-                     body{
-                        margin:0;
-                        font-family: 'Gayathri', Helvetica, sans-serif;
-                        box-sizing: border-box;
-                        background-color: white;
-                        overflow-x: hidden;
-                        max-width: 100vw;
-                        min-height: 100vh;
-                    }
 
-                    html{
-                        scroll-behavior: smooth; /*currently only Firefox and Chrome */
-                        font-size:12px;
-                        overflow-x: hidden;
-                        --main-color:#1B0DA5; 
-                        --accent-color:#FCFC42;
-                        --secondary-color:#050037;
-                        --bg-color: var(--main-color);
-                        
-                    }
                     .content-container{
                         display: flex;
                         flex-direction: column;
@@ -160,11 +141,7 @@ export default function About(){
                         // color: var(--secondary-color);
                     }
 
-                    @media only screen and (min-width: 600px){
-                        html{
-                            font-size:20px;
-                        }
-                    }
+
 
                 `}
 

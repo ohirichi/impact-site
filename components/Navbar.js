@@ -48,10 +48,27 @@ export default function Navbar(){
                 text-decoration:none;
                 color:white;
                 margin:.5rem;
+                position:relative;
             }
 
             .nav-link:hover{
                 color:var(--accent-color);
+            }
+
+            .nav-link::after{
+                content:"";
+                height: 1px;
+                width: 100%;
+                background-color:var(--accent-color);
+                position:absolute;
+                left:0;
+                bottom:0;
+                transform: scaleX(0);
+                transition: transform 0.3s ease;
+            }
+
+            .nav-link:hover::after{
+                transform: scaleX(1);
             }
         `}
     </style>
